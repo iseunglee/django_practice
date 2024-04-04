@@ -1,0 +1,13 @@
+<h1>음료 종류</h1>
+
+<body>
+    {%if object_list%}
+        <ul>
+            {% for drinktype in object_list %}
+            <li>{{drinktype.type_name}}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>음료 종류가 존재하지 않습니다.</p>
+    {% endif %}
+</body>
